@@ -14,6 +14,8 @@ build:
   number: 0
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x.x') }}
+  ignore_run_exports:
+    - gtest
 
 requirements:
   build:
